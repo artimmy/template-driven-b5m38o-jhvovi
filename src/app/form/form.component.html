@@ -1,5 +1,5 @@
 <form (ngSubmit)="add()" #f="ngForm">
-  <!-- igualei a variavel ao valor ngForm -->
+  <!-- igualei a variavel ao valor ngForm pra depois usar la em baixo no botão salvar -->
   <div>
     <label>Nome:</label>
     <input [(ngModel)]="cliente.nome" name="nome" #nome="ngModel" required>
@@ -9,5 +9,6 @@
     <input [(ngModel)]="cliente.idade" name="idade" #idade="ngModel" required>
   </div>
   <button type="submit" [disabled]="!f.form.valid">Salvar</button>
+  <!-- aqui eu peguei a variavel do form -->
   <button type="reset">Limpar</button>
 </form>
