@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicoService } from '../servico.service';
 import { Cliente } from '../dados';
+
 @Component({
   selector: 'app-tabela',
   templateUrl: './tabela.component.html',
